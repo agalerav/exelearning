@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Instal·lació d'un disc dur per realitzar còpies de seguretat</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Alexandre Galera V" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<meta name="description" content="En aquesta tasca simularem que afegim un disc dur intern al nostre ordinador i posteriorment aprofitarem aquest nou disc per fer una còpia de seguretat de l’original. 
+Com sempre, treballarem des de la plataforma de virtualització VirtualBox. En aquesta pràctica podríeu utilitzar qualsevol màquina virtual que ja tinguéssiu configurada amb el sistema operatiu Windows correctament instal·lat. Tanmateix, aprofitarem per introduir un nou concepte: la clonació.
+" />
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-single-page"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<header id="header">
+<div id="headerContent">
+<h1>Instal·lació d'un disc dur per realitzar còpies de seguretat</h1>
+</div>
+</header>
+<section id="main">
+<article class="node level-1-node" id="exe-node-0">
+<header class="nodeDecoration">
+<h1 id="exenode_0_Inici" class="nodeTitle">Inici</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id0-0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Instal·lació d'un disc dur i configuració de les còpies de seguretat</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta0_125_2" class="block iDevice_content">
+<div class="exe-text"><p><img src="https://www.adslzone.net/app/uploads-adslzone.net/2017/03/disco-duro-2.jpg?x=480&amp;y=375&amp;quality=40" alt="Un disc dur sense instal·lar" title="Un disc dur sense instal·lar" width="480" height="375" /></p>
+<p>En aquesta tasca simularem que afegim un disc dur intern al nostre ordinador i posteriorment aprofitarem aquest nou disc per fer una còpia de seguretat de l’original. </p>
+<p>Com sempre, treballarem des de la plataforma de virtualització VirtualBox. En aquesta pràctica podríeu utilitzar qualsevol màquina virtual que ja tinguéssiu configurada amb el sistema operatiu Windows correctament instal·lat. Tanmateix, aprofitarem per introduir un nou concepte: la clonació.</p>
+<p>S’entén per clonació d’un ordinador el fet de reproduir exactament el contingut de la memòria persistent del sistema on s'allotja el sistema operatiu (el disc dur principal). En el nostre cas, farem servir la clonació per evitar repetir tot el procés d’instal·lació del sistema operatiu cada cop que necessitem una màquina nova. És una manera de treballar que ens ajudarà a estalviar temps i ens donarà seguretat.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id1-0">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Requisits previs</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta1_126_2" class="block iDevice_content">
+<div class="exe-text"><p>Abans d'iniciar aquesta tasca ens hem d'assegurar que disposem d'una màquina virtual amb un Windows 10 instal·lat. Si no disposes d'aquesta màquina hauràs de crear una nova màquina i realityzar la instal·lació completa (aqusta tasca ja la vam fer previament i vam avisar de que no .</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-2">
+<header class="nodeDecoration">
+<h1 id="exenode_2_Activitats1" class="nodeTitle">Activitats 1</h1>
+</header>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id5-2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Clonar una Màquina Virtual</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta5_130_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duració:</span></dt><dd class="pbl-task-duration">00:30</dd></dl><div class="pbl-task-description"><ol style="list-style-type: decimal;" class=" auto-numbered">
+<li>Inicia Oracle VirtualBox.</li>
+<li>Selecciona la màquina virtual existent que desitgis clonar (Windows 10).</li>
+<li>Amb el botó dret del ratolí, accedeix a l’opció de clonació.</li>
+<li>Configura les opcions de clonació. En primer lloc, dona un nom únic a la nova màquina.</li>
+<li>Després assegurat que guardes la nova màquina en una carpeta amb prou espai (vosaltres ho podeu fer a la unitat Dades).</li>
+<li>Accepta la resta de condicions i inicia la nova màquina virtual clonada.</li>
+<li>Verifica que funciona correctament.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id6-2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Afegir un disc dur addicional</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta6_131_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duració:</span></dt><dd class="pbl-task-duration">00:30</dd></dl><div class="pbl-task-description"><ol>
+<li>Selecciona la màquina que hem creat a l'apartat anterior.</li>
+<li>Assegura't que la màquina està apagada. Si no, apaga-la seguint el procediment recomanat.</li>
+<li>Utilitza l’opció paràmetres per afegir un disc dur addicional a aquesta màquina virtual.</li>
+<li>Crea un nou disc dur de 20 GB.</li>
+<li>Accepta les condicions i posteriorment selecciona’l.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id7-2">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Reconeixer el nou disc i formatar-lo.</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta7_132_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duració:</span></dt><dd class="pbl-task-duration">00:30</dd></dl><div class="pbl-task-description"><ol>
+<li>Inicia la màquina virtual.</li>
+<li>Ves a panell de control o tauler de control.</li>
+<li>Ves a sistema i accedeix a l’opció Crear i formatar particions del disc.</li>
+<li>Accedeix a l'Administrador de Discs de Windows per veure el disc dur addicional. A partir d’aquest punt fes captura de pantalla de tots els passos.</li>
+<li>En primer lloc, inicia el disc que hem creat.</li>
+<li>Formata i assigna una lletra de disc al nou disc dur afegit. Això es fa amb un assistent i pots acceptar tots els passos.</li>
+<li>Si ho has fet correctament la nova unitat apareixerà en blau.</li>
+<li>A través de l’explorador d’arxius busca la ubicació de la nova unitat i assegurat que està operativa.</li>
+</ol>
+<p><strong>Respon:</strong></p>
+<ul>
+<li>Quins passos has seguit per clonar la màquina virtual?</li>
+<li>Quins paràmetres has configurat durant el procés de clonació?</li>
+<li>Com has afegit el disc dur addicional a la màquina virtual?</li>
+<li>Quins passos has seguit per formatar i assignar una lletra de disc al nou disc dur afegit?</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+<article class="node level-2-node" id="exe-node-3">
+<header class="nodeDecoration">
+<h1 id="exenode_3_Activitats2" class="nodeTitle">Activitats 2</h1>
+</header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id8-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h2 class="iDeviceTitle">Continuem</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta8_133_2" class="block iDevice_content">
+<div class="exe-text"><p>Amb les activitats anteriors, vam millorar la configuració de la nostra màquina virtual afegint un nou disc dur al sistema. Aquest pas estratègic ofereix diverses oportunitats, i una d'elles és la possibilitat de fer servir aquests discs addicionals per a la creació i emmagatzematge de còpies de seguretat. Les còpies de seguretat són una pràctica essencial per garantir la integritat de les nostres dades, proporcionant una capa addicional de seguretat i la capacitat de recuperar la informació en cas d'accident, fallada del sistema o eliminació accidental de fitxers.</p>
+<p>En aquesta nova activitat, continuarem treballant amb la màquina virtual que ja ha estat preparada amb dos discs durs. L'objectiu principal serà explorar la funcionalitat de fer còpies de seguretat en el segon disc dur. A més, aprendrem com estructurar i organitzar els nostres arxius i carpetes de manera efectiva, com vam fer en una  pràctica anterior, per garantir que les còpies de seguretat siguin comprensibles i fàcils de gestionar.</p>
+<p>Amb aquesta pràctica, no només estarem fent un ús eficient dels recursos del nostre sistema virtual, sinó que també desenvoluparem habilitats clau relacionades amb la gestió de dades, la prevenció de pèrdues d'informació i la capacitat de restaurar el nostre sistema a un estat funcional després d'un incident inesperat.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id11-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Creem fitxers i carpetes (amb el nostre nom)</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta11_136_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duració:</span></dt><dd class="pbl-task-duration">00:15</dd></dl><div class="pbl-task-description"><ol>
+<li>Anem a la carpeta Documents a través de l’Explorador d’arxius.</li>
+<li>Creem dues carpetes i dos arxius dins de cada carpeta.</li>
+<li>Anomenem aquests nous arxius i carpetes amb el teu nom seguit d’un nombre. Per exemple AlexG1, AlexG2 ….</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id12-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Configurar la copia de seguretat</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta12_137_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duració:</span></dt><dd class="pbl-task-duration">00:15</dd></dl><div class="pbl-task-description"><ol>
+<li>Anem a Configuració.</li>
+<li>Seleccionem Actualitzacions i seguretat.</li>
+<li>Observa les diferents opcions de configuració i fes una còpia de seguretat.</li>
+<li>En aquest punt fes una captura de la teva pantalla  i explica amb les teves paraules els paràmetres configurables que consideris més importants.</li>
+<li>Ves a la teva carpeta documents i crea una nova carpeta. Torna a fer una còpia de seguretat.</li>
+<li>Repeteix l’anterior punt. En total has d’haver fet tres còpies de seguretat com a mínim.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id13-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Mostrar les còpies de seguretat des de l’Explorador d’arxius</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta13_138_2" class="block iDevice_content">
+<div class="pbl-task-description"><ol>
+<li>Accedeix al segon disc dur.</li>
+<li>Navega a través de les diferents carpetes i localitza l’arxiu el directori on es troben els documents que has creat en aquesta mateixa pràctica.</li>
+<li>Fes una captura de pantalla on es vegin els fitxers i explica que creus que passarà si esborrem els fitxers originals.</li>
+<li>Retorna al disc inicial i esborra els fitxers originals.</li>
+<li>A continuació buida la paperera de reciclatge.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id14-3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h2 class="iDeviceTitle">Restaurar arxius perduts o esborrats</h2></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_139_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duració:</span></dt><dd class="pbl-task-duration">00:30</dd></dl><div class="pbl-task-description"><ol>
+<li>Retorna a la pàgina de configuració de còpies de seguretat.</li>
+<li>Navega fins a la part inferior de la pàgina i localitza l’opció Restaurar arxius des de una còpia de seguretat actual.</li>
+<li>En aquest punt veuràs que pots navegar per les diferents còpies de seguretat que has fet.</li>
+<li>Fes una captura de pantalla on es vegi que dins les opcions de restauració hi apareix la carpeta que has creat amb el teu nom. A la part superior d’aquesta captura es veurà el nombre de còpies de seguretat que has fet. Recorda que com a mínim n’he demanat tres.</li>
+<li>Finalment, presiona el botó central i comprova si s’ha realitzat la restauració de forma correcta.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</article>
+</section>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Llicenciat sota la </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Llicència Creative Commons Reconeixement CompartirIgual 4.0</a></p>
+</div>
+
+
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creat amb eXeLearning<span> (Finestra nova)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body>
+</html>
